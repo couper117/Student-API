@@ -63,5 +63,8 @@ app.post("/students", (req, res) => {
   students.push(newStudent);
   res.status(201).send({message: "student added" , students: newStudent});
 });
+app.delete("/items/:id", (req, res) => {
+  res.json(students);
+});
 
 
